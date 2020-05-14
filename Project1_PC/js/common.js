@@ -1,0 +1,3 @@
+$(function(){
+	pcInteraction.navigation();
+});

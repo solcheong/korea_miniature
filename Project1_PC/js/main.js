@@ -23,5 +23,23 @@ var pcInteraction={
 		$("nav li:last-child li:last-child").focusout(function(){
 			$("nav > ul").stop().animate({height:70}, 500);
 		});
+	},
+	slider: function(){
+		var owl=$(".owl-carousel");
+
+		owl.owlCarousel({
+			margin: 0,
+			nav: false, 
+			loop: true,
+			responsive: {
+				0: {
+					items: 1
+				},
+				2000: {
+					items: 1
+				}
+			}
+		});
+		owl.trigger("refresh.owl.carousel");
 	}
 }
